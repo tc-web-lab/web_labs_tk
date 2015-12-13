@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Путешествия</title>
+	<link rel="shortcut icon" href="/static/images/favicon.ico" type="image/ico">
+	<link rel="stylesheet" type="text/css" href="/static/css/external/reset.css">
+	<link rel="stylesheet" type="text/css" href="/static/css/external/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="/static/libs/font-awesome/css/font-awesome.min.css"><!--иконки-->
+	<link rel="stylesheet" type="text/css" href="/static/css/myStyle.css">
+	<link rel="stylesheet" type="text/css" href="/static/libs/perfect-scrollbar/css/perfect-scrollbar.css"><!--скроллбар-->
+
+	<!--<script type="text/javascript" src="content/js/prefixfree.min.js"></script>-->
+	<script type="text/javascript" src="/static/js/jquery-2.1.4.js"></script> <!--jquery-->
+	<script type="text/javascript" src="/static/js/slides.min.jquery.js"></script> <!--слайдер-->
+	<script type="text/javascript" src="/static/libs/perfect-scrollbar/js/min/perfect-scrollbar.jquery.min.js"></script> <!--скроллбар-->
+	<script type="text/javascript" src="/static/js/jq.js"></script> 
+
+	<!-- http://colorhunt.co/c/7247 -->
+</head>
+<body>
+	<div class="container-fluid">
+		<header class="row header">
+			<div class="col-lg-12 logo">
+				<h1>Мои путешествия</h1>
+				<img src="/static/images/logo3.png" height="103" width="479">
+				<div class="anim"></div>
+			</div>
+			<aside class="col-lg-2 sidebar">
+				<nav class="nav">
+					<ul>
+						<li class="home">
+							Главная
+						</li>
+						<li class="gallery">
+							Галлерея
+						</li>
+						<li class="blogNav">
+							Блог
+						</li>
+						<!--<li class="votingNav">
+							Голосование
+						</li>-->
+					</ul>
+				</nav>
+			</aside>
+			<section class="col-lg-9 slides">
+			
+				 <div class="slides_container">
+      				<div>
+      				     <img src="/static/images/slide1.jpg">
+      				      <p>
+      				     	статья 1
+      				     </p>
+      				</div>
+      				<div>
+      				    <img src="/static/images/slide2.jpg">
+      				     <p>
+      				     	статья 2
+      				     </p>
+      				</div>
+      				<div>
+      				    <img src="/static/images/slide3.jpg">
+      				     <p>
+      				     	статья 3
+      				     </p>
+      				</div>
+      				<div>
+      				    <img src="/static/images/slide4.jpg">
+      				     <p>
+      				     	статья 4
+      				     </p>
+      				</div>
+      				<div>
+      					<img src="/static/images/slide5.jpg">
+      					 <p>
+      				     	статья 5
+      				     </p>
+      				</div>
+    			</div>
+    		<a href="#" class="next"><i class="fa fa-angle-right"></i></a>
+			<a href="#" class="prev"></a>
+
+			</section>
+			<article class="col-lg-9 article">
+				<h3>Известные и не очень сайты для каждого путешественника</h3>
+				<p>
+					Полезные сайты и сервисы, на которые стоит обратить вниманием если вы планируете путешествие самостоятельно.
+				</p>
+				<ul>
+					<li><i class="fa fa-plane"></i>
+					<a href="http://booking.com">booking.com</a> — бронирование отелей по всему миру
+					</li>
+					<li><i class="fa fa-plane"></i>
+					<a href="http://datscha-booking.com">datscha-booking.com</a> — полезный сайт, где в большом объеме представлены частные объявления о сдаче недвижимости, домов, коттеджей и квартир за границей
+					</li>
+					<li><i class="fa fa-plane"></i>
+					<a href="http://kiddy-land.com">kiddy-land.com</a> — в дорогу с детьми
+					</li>
+					<li><i class="fa fa-plane"></i>
+					<a href="http://touring.de">touring.de</a> — автобусные туры из Германии по всей Европе.
+					</li>
+					<li><i class="fa fa-plane"></i>
+					<a href="http://dontforgetyourtoothbrush.com">dontforgetyourtoothbrush.com</a> — Специальный сайт для рассеянных: его функционал поможет убедиться, что никто не забыт и ничто не забыто.
+					</li>
+				</ul>
+			</article>
+			<article class="col-lg-9 blog">
+				<p>
+					{% block article %}{% endblock %}
+				</p>	
+			</article>
+			<section class="col-lg-9 voting">
+				<p>
+				тут будет голосование
+					{% block polls %}{% endblock %}
+				</p>
+			</section>
+			<div class="col-lg-12 footer">
+				Copyright &copy KPI Technical cybernetic
+			</div>
+		</header>
+	</div>
+</body>
+</html>
